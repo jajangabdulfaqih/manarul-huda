@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Pesantren Manarul Huda - Santri Melek AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            950: '#021811',
+                            900: '#032B1D',
+                            800: '#064E3B',
+                            700: '#047857',
+                        },
+                        gold: {
+                            400: '#F3E5AB',
+                            500: '#D4AF37',
+                            600: '#B8972F',
+                            700: '#9A7E26',
+                        }
+                    },
+                    backgroundImage: {
+                        'islamic-glow': 'radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 60%)',
+                        'ai-network': 'radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glasscard {
+            background: rgba(3, 43, 29, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFF 30%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .geometric-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' fill='none' stroke='rgba(212,175,55,0.03)' stroke-width='1'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-emerald-950 text-gray-100 font-sans antialiased geometric-bg overflow-x-hidden">
+
+    <a href="https://wa.me/6285864668255" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110 duration-300 group">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="absolute right-16 bg-emerald-900 border border-gold-500/30 text-gold-500 text-xs py-1 px-3 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Hubungi Kami</span>
+    </a>
+
+    <nav class="fixed top-0 w-full z-40 bg-emerald-950/80 backdrop-blur-md border-b border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-emerald-900 rounded-full border border-gold-500/40 flex items-center justify-center overflow-hidden">
+                    <img src="logo.png" alt="Logo Resmi Manarul Huda" class="w-10 h-10 object-contain">
+                </div>
+                <div>
+                    <span class="block text-xs font-bold uppercase tracking-widest text-gold-500">Pondok Pesantren</span>
+                    <span class="block text-md font-extrabold tracking-wide text-white">MANARUL HUDA</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#hero" class="hover:text-gold-500 transition-colors">Beranda</a>
+                <a href="#profil" class="hover:text-gold-500 transition-colors">Profil</a>
+                <a href="#program" class="hover:text-gold-500 transition-colors">Program</a>
+                <a href="#keunggulan" class="hover:text-gold-500 transition-colors">Keunggulan</a>
+                <a href="#pendaftaran" class="hover:text-gold-500 transition-colors">Pendaftaran</a>
+            </div>
+            <div>
+                <a href="#pendaftaran" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-emerald-950 text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-md transition-all shadow-md shadow-gold-500/10">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-islamic-glow pointer-events-none"></div>
+        <div class="absolute inset-0 bg-ai-network pointer-events-none"></div>
+        <div class="absolute right-0 top-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-900/80 border border-gold-500/30 text-gold-500 text-xs font-semibold tracking-wider uppercase mx-auto lg:mx-0 animate-pulse">
+                    <i class="fas fa-microchip text-[10px]"></i> Penerimaan Santri Baru 2026/2027
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                    Pondok Pesantren <br>
+                    <span class="text-gradient-gold">Manarul Huda</span>
+                </h1>
+                <p class="text-emerald-400 font-mono tracking-widest text-lg sm:text-2xl uppercase">
+                    “Santri Melek AI”
+                </p>
+                <p class="text-gray-400 max-w-xl mx-auto lg:mx-0 text-base sm:text-lg leading-relaxed">
+                    Mencetak generasi Qur'ani yang kokoh dalam spiritualitas Salafiyah serta responsif menghadapi masa depan peradaban teknologi informasi dan kecerdasan buatan.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#pendaftaran" class="w-full sm:w-auto text-center bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-emerald-950 font-bold px-8 py-4 rounded-lg shadow-lg shadow-gold-500/20 transition-all transform hover:-translate-y-0.5">
+                        <i class="fas fa-user-plus mr-2"></i>Ambil Formulir
+                    </a>
+                    <a href="#profil" class="w-full sm:w-auto text-center bg-emerald-900/60 hover:bg-emerald-900 border border-gold-500/30 text-gold-500 font-bold px-8 py-4 rounded-lg transition-all">
+                        Pelajari Profil
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-gold-500 to-emerald-500 opacity-20 blur-xl"></div>
+                <div class="glasscard p-8 rounded-2xl w-full max-w-sm text-center relative border border-gold-500/30 shadow-2xl">
+                    <div class="w-32 h-32 mx-auto mb-6 bg-emerald-900/80 rounded-full border-2 border-gold-500 p-3 flex items-center justify-center shadow-lg shadow-gold-500/10">
+                        <img src="logo.png" alt="Logo Resmi Manarul Huda" class="w-full h-full object-contain">
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold text-white uppercase tracking-wider">Manarul Huda</h3>
+                        <p class="text-xs text-gold-500 tracking-widest uppercase">Knowledge • Faith • Civilization</p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-emerald-800 grid grid-cols-2 gap-4 text-left">
+                        <div class="p-3 bg-emerald-950/50 rounded-lg border border-emerald-800">
+                            <span class="block text-xs text-gray-500 uppercase">Kurikulum</span>
+                            <span class="text-sm font-semibold text-gray-200">Salaf & IT AI</span>
+                        </div>
+                        <div class="p-3 bg-emerald-950/50 rounded-lg border border-emerald-800">
+                            <span class="block text-xs text-gray-500 uppercase">Beasiswa</span>
+                            <span class="text-sm font-semibold text-emerald-400">100% Gratis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="py-24 relative border-t border-emerald-900 bg-emerald-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-gold-500 uppercase tracking-widest">Tentang Lembaga</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Pesantren Modern Berbasis Salaf & Teknologi AI</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glasscard p-6 rounded-xl hover:border-gold-500/60 transition-all group duration-300">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-900 flex items-center justify-center text-gold-500 text-xl mb-5 border border-gold-500/20 group-hover:bg-gold-500 group-hover:text-emerald-950 transition-all">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Pendidikan Agama</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Pendalaman ilmu syariat formal maupun diniah secara komprehensif berlandaskan manhaj Ahlus Sunnah wal Jama'ah.</p>
+                </div>
+                <div class="glasscard p-6 rounded-xl hover:border-gold-500/60 transition-all group duration-300">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-900 flex items-center justify-center text-gold-500 text-xl mb-5 border border-gold-500/20 group-hover:bg-gold-500 group-hover:text-emerald-950 transition-all">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Pembinaan Akhlak</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Menanamkan nilai-nilai luhur kepribadian, keteladanan, adab islami, serta kedisiplinan hidup bermasyarakat.</p>
+                </div>
+                <div class="glasscard p-6 rounded-xl hover:border-gold-500/60 transition-all group duration-300">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-900 flex items-center justify-center text-gold-500 text-xl mb-5 border border-gold-500/20 group-hover:bg-gold-500 group-hover:text-emerald-950 transition-all">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Program Tahfidz</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Metode karantina terukur untuk mencetak hafidz/hafidzah dengan pemahaman makhraj dan tajwid yang mutqin.</p>
+                </div>
+                <div class="glasscard p-6 rounded-xl hover:border-gold-500/60 transition-all group duration-300">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-900 flex items-center justify-center text-gold-500 text-xl mb-5 border border-gold-500/20 group-hover:bg-gold-500 group-hover:text-emerald-950 transition-all">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Teknologi Digital & AI</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Penguasaan perangkat kecerdasan buatan, pemrograman dasar, serta kesiapan menyambut era transformasi digital global.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="program" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-gold-500 uppercase tracking-widest">Program Unggulan</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Jenjang Pendidikan Terintegrasi</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="glasscard rounded-2xl overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-bold text-gold-500 tracking-widest uppercase bg-emerald-900/80 px-3 py-1 rounded border border-gold-500/20">Akademik</span>
+                            <i class="fas fa-graduation-cap text-3xl text-emerald-400/40"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">SMP / MTs</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">Kurikulum Nasional yang disinergikan secara adaptif dengan muatan sains modern dan dasar literasi digital.</p>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-500 text-xs"></i> Ujian Berbasis Komputer</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-500 text-xs"></i> Kelas Lab Bahasa Terpadu</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-emerald-950/80 border-t border-emerald-800/60">
+                        <a href="#pendaftaran" class="block text-center text-xs font-bold uppercase tracking-wider text-gold-500 group-hover:text-white transition-colors">Pilih Program <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glasscard rounded-2xl overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between border-gold-500/50 shadow-xl shadow-gold-500/5">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-bold text-gold-500 tracking-widest uppercase bg-emerald-900/80 px-3 py-1 rounded border border-gold-500/20">Kekhususan</span>
+                            <i class="fas fa-quran text-3xl text-gold-500/40"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Tahfidz Al-Qur'an</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">Fokus akselerasi hafalan kalamullah dengan standarisasi tajwid tinggi di bawah bimbingan asatidzah berkompeten.</p>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-500 text-xs"></i> Target Kelulusan Mutqin</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-500 text-xs"></i> Sanad Quran Kontemporer</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-emerald-950/80 border-t border-emerald-800/60">
+                        <a href="#pendaftaran" class="block text-center text-xs font-bold uppercase tracking-wider text-gold-500 group-hover:text-white transition-colors">Pilih Program <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glasscard rounded-2xl overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-bold text-gold-500 tracking-widest uppercase bg-emerald-900/80 px-3 py-1 rounded border border-gold-500/20">Tradisi</span>
+                            <i class="fas fa-book text-3xl text-emerald-400/40"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Salafiyah</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">Kajian kitab kuning otentik guna mentransfer khazanah keilmuan ulama klasik lintas generasi secara murni.</p>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-500 text-xs"></i> Sorogan & Bandungan System</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-500 text-xs"></i> Pendalaman Ilmu Alat (Nahwu/Sharaf)</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-emerald-950/80 border-t border-emerald-800/60">
+                        <a href="#pendaftaran" class="block text-center text-xs font-bold uppercase tracking-wider text-gold-500 group-hover:text-white transition-colors">Pilih Program <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keunggulan" class="py-24 bg-emerald-900/10 border-t border-b border-emerald-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-gold-500 uppercase tracking-widest">Fasilitas & Keunggulan</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Mengapa Memilih Manarul Huda?</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <script>
+                    const benefits = [
+                        { icon: 'fa-gift', title: 'Pendaftaran Gratis', desc: 'Tanpa dipungut biaya pendaftaran awal.' },
+                        { icon: 'fa-wallet', title: 'Gratis Biaya Bulanan', desc: 'Bebas SPP atau iuran syahriah bulanan.' },
+                        { icon: 'fa-bolt', title: 'Gratis Biaya Listrik', desc: 'Fasilitas utilitas sepenuhnya ditanggung.' },
+                        { icon: 'fa-utensils', title: 'Gratis Biaya Makan', desc: 'Konsumsi sehat & bergizi terjadwal rapi.' },
+                        { icon: 'fa-user-graduate', title: 'Gratis Biaya Pendidikan', desc: 'Akses penuh KBM reguler bebas biaya.' },
+                        { icon: 'fa-quran', title: 'Tahfidz Al-Qur’an', desc: 'Bimbingan intensif target setoran mutqin.' },
+                        { icon: 'fa-language', title: 'Bahasa Arab & Inggris', desc: 'Aktif berkomunikasi di lingkungan asrama.' },
+                        { icon: 'fa-book-open', title: 'Kitab Kuning', desc: 'Kajian komparatif literatur klasik Islam.' },
+                        { icon: 'fa-hotel', title: 'Asrama Nyaman', desc: 'Kondusif, bersih, rapi untuk beristirahat.' },
+                        { icon: 'fa-bullhorn', title: 'Digital Marketing', desc: 'Ekstrakurikuler penunjang kemandirian santri.' },
+                        { icon: 'fa-laptop-code', title: 'Pembelajaran Tools AI', desc: 'Praktik integrasi platform AI produktif.' },
+                        { icon: 'fa-award', title: 'Pembinaan Akhlak', desc: 'Pembentukan karakter adab islami hakiki.' }
+                    ];
+
+                    document.write(benefits.map(b => `
+                        <div class="glasscard p-5 rounded-xl border border-emerald-800/50 hover:bg-emerald-900/40 transition-all duration-200">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-950 flex items-center justify-center text-gold-500 border border-gold-500/10">
+                                    <i class="fas ${b.icon}"></i>
+                                </div>
+                                <div class="space-y-1">
+                                    <h4 class="font-bold text-white text-base">${b.title}</h4>
+                                    <p class="text-xs text-gray-400 leading-relaxed">${b.desc}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `).join(''));
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="pendaftaran" class="py-24 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6 text-center lg:text-left">
+                    <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block">Alur Penerimaan</span>
+                    <h2 class="text-3xl font-extrabold text-white">Pendaftaran Gelombang 1</h2>
+                    <div class="inline-block p-4 bg-emerald-900/60 border border-gold-500/20 rounded-xl">
+                        <span class="block text-xs text-gray-400 uppercase font-medium">Tanggal Pelaksanaan</span>
+                        <span class="text-xl font-bold text-gold-500">15 Mei – Selesai</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Kuota terbatas untuk angkatan perdana berbasis teknologi informasi. Pastikan data calon santri terinput secara valid untuk kemudahan proses administrasi berkas.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glasscard p-8 rounded-2xl border border-gold-500/20 shadow-xl">
+                        <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fas fa-file-invoice text-gold-500 text-sm"></i> Formulir Pengisian Data
+                        </h3>
+                        <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label class="block text-xs uppercase font-semibold text-gray-400 mb-1.5">Nama Lengkap Calon Santri</label>
+                                <input type="text" placeholder="Contoh: Muhammad Akhyar" class="w-full bg-emerald-950/80 border border-emerald-800 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-gold-500/60 transition-colors">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs uppercase font-semibold text-gray-400 mb-1.5">Nomor WhatsApp Orang Tua</label>
+                                    <input type="tel" placeholder="0858xxxx" class="w-full bg-emerald-950/80 border border-emerald-800 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-gold-500/60 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase font-semibold text-gray-400 mb-1.5">Jenjang Pendidikan Pilihan</label>
+                                    <select class="w-full bg-emerald-950/80 border border-emerald-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500/60 transition-colors">
+                                        <option value="smp">SMP / MTs</option>
+                                        <option value="tahfidz">Karantina Tahfidz</option>
+                                        <option value="salaf">Madrasah Salafiyah</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-semibold text-gray-400 mb-1.5">Alamat Lengkap Rumah</label>
+                                <textarea rows="3" placeholder="Tuliskan alamat domisili lengkap saat ini..." class="w-full bg-emerald-950/80 border border-emerald-800 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-gold-500/60 transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-emerald-950 font-bold text-sm uppercase tracking-wider py-3.5 rounded-lg transition-all shadow-lg shadow-gold-500/10">
+                                Kirim Pendaftaran <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-24 bg-emerald-900/20 border-t border-emerald-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-gold-500 uppercase tracking-widest">Dokumentasi</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Galeri Aktivitas Santri</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-emerald-900/40 border border-emerald-800 rounded-xl h-64 flex flex-col justify-end p-6 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent z-10"></div>
+                    <span class="relative z-20 text-xs font-mono text-gold-500 uppercase">Aktivitas Mengaji</span>
+                    <h4 class="relative z-20 font-bold text-white text-base">Halaqah Sorogan Kitab Kuning</h4>
+                </div>
+                <div class="bg-emerald-900/40 border border-emerald-800 rounded-xl h-64 flex flex-col justify-end p-6 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent z-10"></div>
+                    <span class="relative z-20 text-xs font-mono text-gold-500 uppercase">Lab Komputer</span>
+                    <h4 class="relative z-20 font-bold text-white text-base">Pembelajaran Praktik AI Tools</h4>
+                </div>
+                <div class="bg-emerald-900/40 border border-emerald-800 rounded-xl h-64 flex flex-col justify-end p-6 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent z-10"></div>
+                    <span class="relative z-20 text-xs font-mono text-gold-500 uppercase">Kompleks Pondok</span>
+                    <h4 class="relative z-20 font-bold text-white text-base">Gedung Utama & Masjid Pesantren</h4>
+                </div>
+                <div class="bg-emerald-900/40 border border-emerald-800 rounded-xl h-64 flex flex-col justify-end p-6 relative overflow-hidden group lg:col-span-2">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent z-10"></div>
+                    <span class="relative z-20 text-xs font-mono text-gold-500 uppercase">Ekstrakurikuler</span>
+                    <h4 class="relative z-20 font-bold text-white text-base">Sesi Pendalaman Digital Marketing & Content Creation</h4>
+                </div>
+                <div class="bg-emerald-900/40 border border-emerald-800 rounded-xl h-64 flex flex-col justify-end p-6 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent z-10"></div>
+                    <span class="relative z-20 text-xs font-mono text-gold-500 uppercase">Asrama</span>
+                    <h4 class="relative z-20 font-bold text-white text-base">Fasilitas Kamar Tidur Santri Mukim</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-24 relative border-t border-emerald-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block">Hubungi Kami</span>
+                        <h2 class="text-3xl font-extrabold text-white">Layanan Informasi Terpadu</h2>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Butuh bantuan atau ingin berkonsultasi mengenai teknis pendaftaran santri? Silakan hubungi narahubung resmi sekretariat kami.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-900/60 border border-emerald-800 flex items-center justify-center text-gold-500"><i class="fas fa-user-tie"></i></div>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase">Contact Person</span>
+                                <span class="text-sm font-semibold text-white">Jajang Abdulloh Faqih</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-900/60 border border-emerald-800 flex items-center justify-center text-gold-500"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase">WhatsApp Official</span>
+                                <span class="text-sm font-semibold text-white">085864668255</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-900/60 border border-emerald-800 flex items-center justify-center text-gold-500"><i class="fab fa-instagram"></i></div>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase">Instagram</span>
+                                <span class="text-sm font-semibold text-white">@ponpes_manarul_.huda</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-900/60 border border-emerald-800 flex items-center justify-center text-gold-500 mt-1"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase">Alamat Lengkap</span>
+                                <span class="text-sm text-gray-300 leading-relaxed block">
+                                    Jl. Kehutanan No.2 Blok Mekarmulya, Desa Cihaur, Kec. Maja, Kab. Majalengka, Prov. Jawa Barat
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="w-full h-full min-h-[350px] bg-emerald-900/40 rounded-2xl border border-emerald-800 relative overflow-hidden flex flex-col items-center justify-center p-8 text-center group">
+                        <div class="absolute inset-0 bg-emerald-950/40 z-10 pointer-events-none"></div>
+                        <i class="fas fa-map-location-dot text-5xl text-gold-500/30 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h4 class="text-white font-bold mb-1 z-20">Peta Lokasi Lembaga</h4>
+                        <p class="text-xs text-gray-400 max-w-xs mb-4 z-20">Desa Cihaur, Kecamatan Maja, Kabupaten Majalengka.</p>
+                        <a href="https://maps.google.com" target="_blank" class="z-20 bg-emerald-900 border border-gold-500/30 text-gold-500 text-xs font-bold uppercase tracking-wider py-2.5 px-5 rounded-lg hover:bg-gold-500 hover:text-emerald-950 transition-all">
+                            Buka Google Maps <i class="fas fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-emerald-950 border-t border-gold-500/10 py-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div class="md:col-span-5 space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="logo.png" alt="Logo Resmi Manarul Huda" class="w-10 h-10 object-contain">
+                    <div>
+                        <span class="block text-xs font-bold text-gold-500 tracking-wider uppercase">Pondok Pesantren</span>
+                        <span class="block text-base font-black text-white tracking-wide">MANARUL HUDA</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 font-mono tracking-widest uppercase">“Santri Melek AI”</p>
+                <p class="text-xs text-gray-400 max-w-sm leading-relaxed">
+                    Menghadirkan sinergi utuh antara kekuatan rohani pesantren berbasis salafiah dengan tantangan peradaban digital modern.
+                </p>
+            </div>
+            
+            <div class="md:col-span-3 space-y-3">
+                <h4 class="text-sm font-bold uppercase text-gold-500 tracking-wider">Navigasi</h4>
+                <ul class="space-y-2 text-xs text-gray-400">
+                    <li><a href="#hero" class="hover:text-white transition-colors">Beranda</a></li>
+                    <li><a href="#profil" class="hover:text-white transition-colors">Profil Lembaga</a></li>
+                    <li><a href="#program" class="hover:text-white transition-colors">Program Pendidikan</a></li>
+                    <li><a href="#pendaftaran" class="hover:text-white transition-colors">Formulir Penerimaan</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4 space-y-3">
+                <h4 class="text-sm font-bold uppercase text-gold-500 tracking-wider">Sekretariat</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Kecamatan Maja, Kabupaten Majalengka, <br>
+                    Jawa Barat - Indonesia.
+                </p>
+                <div class="flex gap-3 pt-2 text-gray-400">
+                    <a href="#" class="hover:text-gold-500"><i class="fab fa-facebook-f text-sm"></i></a>
+                    <a href="https://instagram.com/ponpes_manarul_.huda" target="_blank" class="hover:text-gold-500"><i class="fab fa-instagram text-sm"></i></a>
+                    <a href="https://wa.me/6285864668255" target="_blank" class="hover:text-gold-500"><i class="fab fa-whatsapp text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-emerald-900 text-center">
+            <p class="text-xs text-gray-600">© 2026 Pondok Pesantren Manarul Huda. All Rights Reserved. Designed for React/Next.js UI standard.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
